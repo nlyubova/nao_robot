@@ -341,4 +341,10 @@
 		<origin rpy="0 0 -1.5708" xyz="0.035 -0.025 0.0035"/>
 		<axis xyz="0 0 0"/>
 	</joint>
+	<link name="CameraDepth_frame"/>
+        <joint name="CameraDepth_joint" type="fixed">
+	        <parent link="Head"/>
+	        <child link="CameraDepth_frame"/>
+	        <origin rpy="-2.0043951 0 -1.5708" xyz="0.02 -0.04708 0.13"/>
+        </joint>
 </robot>
